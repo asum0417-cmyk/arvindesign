@@ -263,7 +263,7 @@
                     <input type="checkbox" value="cabinet_bedroom"> 臥室衣櫃
                 </label>
                 <label class="checkbox-item">
-                    <input type="checkbox" value="floor"> 地板更新 (每坪$3000)
+                    <input type="checkbox" value="floor"> 地板更新
                 </label>
                 <label class="checkbox-item">
                     <input type="checkbox" value="kitchen"> 廚具系統櫃
@@ -308,16 +308,16 @@
     
     // 配置設定檔 (Config)
     const PRICING = {
-        basePerPing: 10000, 
+        basePerPing: 12000, 
         conditions: {
-            'new': 1.0,
+            'new': 1.2,
             'old': 1.5
         },
         styles: {
-            'creamy': { rate: 1.2, desc: '奶油原木風通常包含較多圓弧木作造型與特殊塗料。', name: '奶油原木風' },
-            'muji':   { rate: 1.05, desc: '日系無印風強調收納機能與標準化櫃體，CP值不錯。', name: '日系無印風' },
-            'nordic': { rate: 1.1, desc: '北歐風重視色彩搭配與軟裝，基礎工程相對單純。', name: '北歐風' },
-            'wabi':   { rate: 1.35, desc: '侘寂風運用特殊礦物塗料與質樸曲線，展現低調的奢華感。', name: '侘寂風' },
+            'creamy': { rate: 1.3, desc: '奶油原木風通常包含較多圓弧木作造型與特殊塗料。', name: '奶油原木風' },
+            'muji':   { rate: 1.3, desc: '日系無印風強調收納機能與標準化櫃體，CP值不錯。', name: '日系無印風' },
+            'nordic': { rate: 1.2, desc: '北歐風重視色彩搭配與軟裝，基礎工程相對單純。', name: '北歐風' },
+            'wabi':   { rate: 1.5, desc: '侘寂風運用特殊礦物塗料與質樸曲線，展現低調的奢華感。', name: '侘寂風' },
             'dark':   { rate: 1.4, desc: '深色現代風常運用鐵件、石材與氣氛燈光，質感升級。', name: '深色現代風' }
         },
         addons: {
@@ -328,7 +328,7 @@
             'partition':       { type: 'fixed', cost: 30000, name: '隔間調整' },
             'lighting':        { type: 'fixed', cost: 8000, name: '燈光計畫' },
             'bathroom':        { type: 'fixed', cost: 80000, name: '浴廁翻新' }, 
-            'floor':           { type: 'per_ping', cost: 3000, name: '地板更新' }
+            'floor':           { type: 'per_ping', cost: 3500, name: '地板更新' }
         }
     };
     
@@ -406,4 +406,5 @@
 </script>
 
 </body>
+
 </html>
